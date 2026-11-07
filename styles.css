@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Noto+Sans+TC:wght@400;500;600;700;800&display=swap');
+
+:root {
+  color-scheme: dark;
+  font-family: 'Noto Sans TC', 'Microsoft JhengHei', sans-serif;
+  background: #080c13;
+  color: #e9e9f4;
+  font-synthesis: none;
+}
+
+* { box-sizing: border-box; }
+
+html, body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  overflow: hidden;
+  background:
+    radial-gradient(ellipse at 50% 42%, rgba(38, 44, 69, .34), transparent 58%),
+    #080c13;
+}
+
+body {
+  display: grid;
+  place-items: center;
+}
+
+.game-shell {
+  width: min(100vw, 160vh);
+  aspect-ratio: 8 / 5;
+  max-height: 100vh;
+  position: relative;
+  overflow: hidden;
+  background: #111923;
+  box-shadow: 0 0 0 1px rgba(171, 184, 219, .13), 0 24px 100px rgba(0, 0, 0, .65), 0 0 90px rgba(67, 99, 180, .1);
+}
+
+canvas {
+  display: block;
+  width: 100%;
+  height: 100%;
+  image-rendering: auto;
+  cursor: crosshair;
+  outline: none;
+}
+
+.screen-reader-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
